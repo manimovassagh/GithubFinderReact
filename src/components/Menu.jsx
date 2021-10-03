@@ -1,9 +1,9 @@
 import React from 'react'
 import { Menu } from 'semantic-ui-react'
-import { useState } from "react"
+import { useState ,useContext} from "react"
+import {name} from "./ContetxStore"
 
-
-export default function MenuExampleBasic() {
+export  function MenuBase() {
 
   const [activeItem, setaAtiveItem] = useState("")
   const handleItemClick = () => (e => setaAtiveItem(e.target.name))
@@ -34,7 +34,7 @@ export default function MenuExampleBasic() {
       >
         Upcoming Events
       </Menu.Item>
-    </Menu>
+         </Menu>
   )
 
 }
