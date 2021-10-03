@@ -2,16 +2,19 @@ import './App.css';
 import React from 'react'
 import {MenuBase} from './components/Menu';
 import {Counter} from "./components/Counter"
-import { countStoreContext } from './components/ContetxStore';
-import {name} from "./components/ContetxStore"
+import { MovieProvider } from './components/MovieProvider';
+
+
+
+
 export default function App() {
   return (
-<countStoreContext.Provider name={name}>
+<MovieProvider >
     <div>
            <MenuBase/>
            <Counter/>
     </div>
-    </countStoreContext.Provider>
+    </MovieProvider>
   )
 }
 

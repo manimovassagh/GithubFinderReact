@@ -1,4 +1,5 @@
 import React ,{useReducer} from 'react'
+import {MovieUser} from './MovieUser'
 
 const initialState=0
 const reducer =(state,action)=>{
@@ -23,6 +24,7 @@ export function Counter() {
       <button onClick={()=>dispatch("DECREMENT")}>Decrement</button>
       <button onClick={()=>dispatch("RESET")}>Reset</button>
     </div>
+    <MovieUser/>
     </div>
   )
 }

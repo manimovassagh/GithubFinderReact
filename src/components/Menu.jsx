@@ -1,7 +1,7 @@
 import React from 'react'
 import { Menu } from 'semantic-ui-react'
-import { useState ,useContext} from "react"
-import {name} from "./ContetxStore"
+import { useState } from "react"
+
 
 export  function MenuBase() {
 
