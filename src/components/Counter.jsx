@@ -18,6 +18,7 @@ export function Counter() {
   const[count,dispatch]=useReducer(reducer,initialState)
   return (
     <div className="ui items  " style={{textAlign:"center"}}>
+   
     <div  className="middle aligned content">
     <div >{count}</div>
       <button onClick={()=>dispatch("INCREMENT")} >Increment</button>
