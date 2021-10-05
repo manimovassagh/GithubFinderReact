@@ -3,7 +3,7 @@ import { Menu } from 'semantic-ui-react'
 import { useState } from "react"
 
 
-export  function MenuBase() {
+export function MenuBase() {
 
   const [activeItem, setaAtiveItem] = useState("")
   const handleItemClick = () => (e => setaAtiveItem(e.target.name))
@@ -34,7 +34,7 @@ export  function MenuBase() {
       >
         Upcoming Events
       </Menu.Item>
-         </Menu>
+    </Menu>
   )
 
 }
